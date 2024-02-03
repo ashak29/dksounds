@@ -1,10 +1,4 @@
 
-// document.querySelector("button").addEventListener("click", handleClick);
-
-
-// function handleClick(){
-//     alert("I got clicked");
-// }
 
 var numberofButtons = document.querySelectorAll(".drum").length;
 
@@ -13,11 +7,7 @@ for(var i=0; i<numberofButtons; i++){
     //anonymous function
     /*************Detection of button press***********/
     document.querySelectorAll(".drum")[i].addEventListener("click", function (){
-   // this.style.color ="white";
-   //syntax for audio
-   //var audio = new Audio(path);
-   //audio.play();
-
+ 
         var buttonInnerHTML = this.innerHTML;
 
         makesound(buttonInnerHTML);
